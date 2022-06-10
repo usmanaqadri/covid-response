@@ -1,0 +1,16 @@
+{
+  "name": "aya_montesori_covid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://usmanaqadri.github.io/covid-response",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
