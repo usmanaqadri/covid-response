@@ -23,9 +23,18 @@ header {
     background-color: white;
 }
 
+ul {
+    text-align: left;
+}
+
 img {
     margin: 5px;
     padding: 15px;
+}
+
+.cute-image {
+    /* margin-left: auto; */
+    margin-right: auto;
 }
 
 header h1 {
@@ -36,7 +45,7 @@ header h1 {
 
 .container {
     height: 40vh;
-    min-width: 80%;
+    min-width: 80vw;
     max-width: 850px;
     background-color: white;
     padding: 10px;
@@ -90,4 +99,11 @@ header h1 {
   #text {
     font-size: larger;
     width: 100vw;
+    line-height: 1.5;
+  }
+
+  footer {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
   }

@@ -20,14 +20,14 @@ function showQuestions(questionsIndex) {
     const question = questions.find((question) => 
     {
         if (question.id === 4) {
-            question.text = `PCR test on the day that their house is closed, which should be Day ${closureDay}. Your child can return to school once their PCR returns negative. Test and stay on Day 3 and 5 at Aya. Continue to wear a mask indoors.`
+            question.text = `PCR test on the day their house is closed, which should be Day ${closureDay}. Your child can return to school once their PCR returns negative. Test and stay on Day 3 and 5 at Aya.<br>Continue to wear a mask indoors.`
         }
         if (question.id === 6) {
-            `No testing required. Your child can return to school on Day ${closureDay + 1}. Test and stay on Day 3 and 5 at Aya. Continue to wear a mask indoors.`
+            `No testing required. Your child can return to school on Day ${closureDay + 1}. Test and stay on Day 3 and 5 at Aya.<br>Continue to wear a mask indoors.`
         }
         return question.id === questionsIndex
     });
-    textEl.innerText = question.text;
+    textEl.innerHTML = question.text;
     while (responseButtonsEl.firstChild) {
         responseButtonsEl.removeChild(responseButtonsEl.firstChild);
     }
@@ -69,7 +69,7 @@ const questions = [
     },
     {
         id: 15,
-        text: "The school will close on Day 1. Students will come back on Day 2. Keep an eye out for an email from us. ",
+        text: "The school will close on Day 1.<br> Students will come back on Day 2<br> Keep an eye out for an email from us. ",
         responses: [
             {
                 text: "Ok",
@@ -79,7 +79,7 @@ const questions = [
     },
     {
         id: 16,
-        text: "The school will close on Day 2. Students will come back on Day 3. Keep an eye out for an email from us. ",
+        text: "The school will close on Day 2.<br> Students will come back on Day 3.<br> Keep an eye out for an email from us. ",
         responses: [
             {
                 text: "Ok",
@@ -117,7 +117,7 @@ const questions = [
     },
     {
         id: 3,
-        text: "Is your child having any of the following symptoms: Fever of 100.4 or higher, sore throat, cough, diarrhea, vomiting, new onset of severe headache (especially with fever), or new loss of taste or smell.",
+        text: "Is your child having any of the following symptoms? <ul><li>Fever of 100.4 or higher</li><li>Sore throat</li><li>Cough</li><li>Diarrhea</li><li>Vomiting</li><li>Severe headache (especially with fever)</li><li>Loss of taste or smell</li></ul>",
         responses: [
             {
                 text: "Yes",
@@ -131,7 +131,7 @@ const questions = [
     },
     {
         id: 4,
-        text: `PCR test on the day that their house is closed, which should be Day ${closureDay}. Your child can return to school once their PCR returns negative. Test and stay on Day 3 and 5 at Aya. Continue to wear a mask indoors.`
+        text: `PCR test on the day their house is closed, which should be Day ${closureDay}. Your child can return to school once their PCR returns negative. Test and stay on Day 3 and 5 at Aya. <br>Continue to wear a mask indoors.`
     },
     {
         id: 5,
@@ -149,7 +149,7 @@ const questions = [
     },
     {
         id: 6,
-        text: `No testing required. Your child can return to school on Day ${closureDay + 1}. Test and stay on Day 3 and 5 at Aya. Continue to wear a mask indoors.`
+        text: `No testing required. Your child can return to school on Day ${closureDay + 1}. Test and stay on Day 3 and 5 at Aya. <br>Continue to wear a mask indoors.`
     },
     {
         id: 7,
@@ -185,7 +185,7 @@ const questions = [
     },
     {
         id: 10,
-        text: "Is your child having any of the following symptoms: Fever of 100.4 or higher, sore throat, cough, diarrhea, vomiting, new onset of severe headache (especially with fever), or new loss of taste or smell.",
+        text: "Is your child having any of the following symptoms? <ul><li>Fever of 100.4 or higher</li><li>Sore throat</li><li>Cough</li><li>Diarrhea</li><li>Vomiting</li><li>Severe headache (especially with fever)</li><li>Loss of taste or smell</li></ul>",
         responses: [
             {
                 text: "Yes",
@@ -199,7 +199,7 @@ const questions = [
     },
     {
         id: 11,
-        text: "Is your child having any of the following symptoms: Fever of 100.4 or higher, sore throat, cough, diarrhea, vomiting, new onset of severe headache (especially with fever), or new loss of taste or smell.",
+        text: "Is your child having any of the following symptoms? <ul><li>Fever of 100.4 or higher</li><li>Sore throat</li><li>Cough</li><li>Diarrhea</li><li>Vomiting</li><li>Severe headache (especially with fever)</li><li>Loss of taste or smell</li></ul>",
         responses: [
             {
                 text: "Yes",
