@@ -24,8 +24,8 @@ header {
 }
 
 img {
-    margin: 0;
-    padding: 0;
+    margin: 5px;
+    padding: 15px;
 }
 
 header h1 {
@@ -89,4 +89,5 @@ header h1 {
   
   #text {
     font-size: larger;
+    width: 100vw;
   }
