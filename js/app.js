@@ -20,10 +20,10 @@ function showQuestions(questionsIndex) {
     const question = questions.find((question) => 
     {
         if (question.id === 4) {
-            question.text = `PCR test on the day their house is closed, which should be <strong>Day ${closureDay}</strong>. Your child can return to school once their PCR returns negative. Test and stay on Day 3 and 5 at Aya. Continue to wear a mask indoors.`
+            question.text = `<p>PCR test on the day their house is closed, which should be <strong>Day ${closureDay}</strong>.</p><p>Your child can return to school once their PCR returns negative.</p><p>Test and stay on Day 3 and 5 at Aya.</p><p>Continue to wear a mask indoors.</p>`
         }
         if (question.id === 6) {
-            question.text = `No testing required. Your child can return to school on <strong>Day ${closureDay + 1}</strong>. Test and stay on Day 3 and 5 at Aya. Continue to wear a mask indoors.`
+            question.text = `<p>No testing required.</p>Your child can return to school on <strong>Day ${closureDay + 1}</strong>.</p><p>Test and stay on Day 3 and 5 at Aya.</p><p>Continue to wear a mask indoors.</p>`
         }
         return question.id === questionsIndex
     });
@@ -69,7 +69,7 @@ const questions = [
     },
     {
         id: 15,
-        text: "The school will close on <strong>Day 1</strong>. Students will come back on <strong>Day 2</strong>. Keep an eye out for an email from us.",
+        text: "<p>The school will close on <strong>Day 1</strong>.</p><p>Students will come back on <strong>Day 2</strong>.</p><p>Keep an eye out for an email from us.</p>",
         responses: [
             {
                 text: "Ok",
@@ -79,7 +79,7 @@ const questions = [
     },
     {
         id: 16,
-        text: "The school will close on <strong>Day 2</strong>. Students will come back on <strong>Day 3</strong>. Keep an eye out for an email from us.",
+        text: "<p>The school will close on <strong>Day 2</strong>.</p><p>Students will come back on <strong>Day 3</strong>.</p><p>Keep an eye out for an email from us.</p>",
         responses: [
             {
                 text: "Ok",
@@ -131,7 +131,7 @@ const questions = [
     },
     {
         id: 4,
-        text: `PCR test on the day their house is closed, which should be <strong>Day ${closureDay}</strong>. Your child can return to school once their PCR returns negative. Test and stay on Days 3 and 5 at Aya. Continue to wear a mask indoors.`
+        text: `<p>PCR test on the day their house is closed, which should be <strong>Day ${closureDay}</strong>.</p><p>Your child can return to school once their PCR returns negative.</p><p>Test and stay on Day 3 and 5 at Aya.</p><p>Continue to wear a mask indoors.</p>`
     },
     {
         id: 5,
@@ -149,7 +149,7 @@ const questions = [
     },
     {
         id: 6,
-        text: `No testing required. Your child can return to school on <strong>Day ${closureDay + 1}</strong>. Test and stay on Days 3 and 5 at Aya. Continue to wear a mask indoors.`
+        text: `<p>No testing required.</p>Your child can return to school on <strong>Day ${closureDay + 1}</strong>.</p><p>Test and stay on Day 3 and 5 at Aya.</p><p>Continue to wear a mask indoors.</p>`
     },
     {
         id: 7,
