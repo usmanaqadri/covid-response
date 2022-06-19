@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items:flex-start;
 }
 header {
     display: flex;
@@ -28,13 +29,18 @@ ul {
 }
 
 img {
-    margin: 5px;
-    padding: 15px;
+    /* margin: 5px; */
+    padding: 5px;
 }
 
+.logo {
+    width: 90px;
+}
+
+
+
 .cute-image {
-    /* margin-left: auto; */
-    margin-right: auto;
+    width: 110px;
 }
 
 header h1 {
@@ -44,7 +50,7 @@ header h1 {
 
 
 .container {
-    height: 40vh;
+    min-height: 30vh;
     min-width: 80vw;
     max-width: 850px;
     background-color: white;
@@ -97,12 +103,13 @@ header h1 {
   }
   
   #text {
-    font-size: larger;
+    font-size: 1.2em;
     width: 100vw;
     line-height: 1.5;
   }
 
   footer {
-    font-size: 12px;
+    margin-top: auto;
+    font-size: 0.8em;
     line-height: 1;
   }
