@@ -20,10 +20,10 @@ function showQuestions(questionsIndex) {
     const question = questions.find((question) => 
     {
         if (question.id === 4) {
-            question.text = `<p>PCR test on the day their house is closed, which should be <strong>Day ${closureDay}</strong>.</p><p>Your child can return to school once their PCR returns negative.</p><p>Test and stay on Day 3 and 5 at Aya.</p><p>Continue to wear a mask indoors.</p>`
+            question.text = `<p>PCR test on the day their house is closed, which should be <strong>Day ${closureDay}</strong>.</p><p>Return to school once their PCR returns negative.</p><p>Test and stay on Day 3 and 5 at Aya.</p><p>Continue to wear a mask indoors.</p>`
         }
         if (question.id === 6) {
-            question.text = `<p>No testing required.</p>Your child can return to school on <strong>Day ${closureDay + 1}</strong>.</p><p>Test and stay on Day 3 and 5 at Aya.</p><p>Continue to wear a mask indoors.</p>`
+            question.text = `<p>No testing required.</p>Return to school on <strong>Day ${closureDay + 1}</strong>.</p><p>Test and stay on Day 3 and 5 at Aya.</p><p>Continue to wear a mask indoors.</p>`
         }
         return question.id === questionsIndex
     });
@@ -131,7 +131,7 @@ const questions = [
     },
     {
         id: 4,
-        text: `<p>PCR test on the day their house is closed, which should be <strong>Day ${closureDay}</strong>.</p><p>Your child can return to school once their PCR returns negative.</p><p>Test and stay on Day 3 and 5 at Aya.</p><p>Continue to wear a mask indoors.</p>`
+        text: `<p>PCR test on the day their house is closed, which should be <strong>Day ${closureDay}</strong>.</p><p>Return to school once their PCR returns negative.</p><p>Test and stay on Day 3 and 5 at Aya.</p><p>Continue to wear a mask indoors.</p>`
     },
     {
         id: 5,
@@ -149,7 +149,7 @@ const questions = [
     },
     {
         id: 6,
-        text: `<p>No testing required.</p>Your child can return to school on <strong>Day ${closureDay + 1}</strong>.</p><p>Test and stay on Day 3 and 5 at Aya.</p><p>Continue to wear a mask indoors.</p>`
+        text: `<p>No testing required.</p>Return to school on <strong>Day ${closureDay + 1}</strong>.</p><p>Test and stay on Day 3 and 5 at Aya.</p><p>Continue to wear a mask indoors.</p>`
     },
     {
         id: 7,
