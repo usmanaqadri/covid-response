@@ -4,7 +4,7 @@ const responseButtonsEl = document.getElementById('option-buttons');
 // const today = new Date();
 // console.log("this is today", today);
 
-let closureDay = 0;
+let closureDay;
 
 function start() {
     showQuestions(0);
@@ -23,7 +23,7 @@ function showQuestions(questionsIndex) {
             question.text = `PCR test on the day their house is closed, which should be <strong>Day ${closureDay}</strong>. Your child can return to school once their PCR returns negative. Test and stay on Day 3 and 5 at Aya. Continue to wear a mask indoors.`
         }
         if (question.id === 6) {
-            `No testing required. Your child can return to school on <strong>Day ${closureDay + 1}</strong>. Test and stay on Day 3 and 5 at Aya. Continue to wear a mask indoors.`
+            question.text = `No testing required. Your child can return to school on <strong>Day ${closureDay + 1}</strong>. Test and stay on Day 3 and 5 at Aya. Continue to wear a mask indoors.`
         }
         return question.id === questionsIndex
     });
@@ -149,7 +149,7 @@ const questions = [
     },
     {
         id: 6,
-        text: `No testing required. Your child can return to school on <strong>Day ${Number(closureDay) + 1}</strong>. Test and stay on Days 3 and 5 at Aya. Continue to wear a mask indoors.`
+        text: `No testing required. Your child can return to school on <strong>Day ${closureDay + 1}</strong>. Test and stay on Days 3 and 5 at Aya. Continue to wear a mask indoors.`
     },
     {
         id: 7,
