@@ -66,6 +66,8 @@ header h1 {
 }
 
 .btn-grid {
+    margin-top: auto;
+    margin-bottom: auto;
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-content:center
