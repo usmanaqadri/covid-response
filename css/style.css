@@ -30,7 +30,7 @@ ul {
 
 img {
     /* margin: 5px; */
-    padding: 5px;
+    padding: 0.7em;
 }
 
 .logo {
@@ -46,6 +46,7 @@ img {
 header h1 {
     font-family: 'Amatic SC', cursive;
     line-height: 1;
+    font-size: 1.7em;
 }
 
 
