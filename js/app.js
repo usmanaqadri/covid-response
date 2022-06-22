@@ -3,11 +3,9 @@
 const numberOfImagesToRotate = 2;
 const firstPart = '<img alt="kid fighting covid" class="cute-image" src="./covid-fight';
 const lastPart = '.png">';
-
 let rand = 1 + Math.floor(Math.random() * numberOfImagesToRotate);
 const fightPicEl = document.querySelector(".cute-image")
 fightPicEl.outerHTML = firstPart + rand + lastPart;
-
 const textEl = document.getElementById('text');
 const responseButtonsEl = document.getElementById('option-buttons');
 
